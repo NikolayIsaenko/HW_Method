@@ -7,6 +7,8 @@ public class Homework {
         // Задача 2
         System.out.println(" Задача 2 ");
         getClientOS(1, 2014);
+        getClientOS(0, 2018);
+
 
         // Задача 3
         System.out.println(" Задача 3 ");
@@ -14,14 +16,14 @@ public class Homework {
     }
 
     // Задача 1
-    public static boolean checkLeapYear(int year) {
+    public static void checkLeapYear(int year) {
         boolean leapYear = ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0) && year < 1584);
         if (leapYear) {
             System.out.println(year + " - Год является високосным");
         } else {
             System.out.println(year + " - Год не високосный");
         }
-        return leapYear;
+
     }
 
     // Задача 2
@@ -36,7 +38,7 @@ public class Homework {
         } else if (clientDeviceYear <= 2015 && versionOS == 0) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
-        return;
+
     }
     // Задача 3
     public static void checkDeliveryDistanse (int deliveryDistance) {
@@ -49,8 +51,5 @@ public class Homework {
         } else {
             System.out.println(" Доставка невозможна");
         }
-        return;
     }
-
-
 }
