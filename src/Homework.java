@@ -12,12 +12,12 @@ public class Homework {
 
         // Задача 3
         System.out.println(" Задача 3 ");
-        checkDeliveryDistanse(80);
+        checkDeliveryDistanse(100);
     }
 
     // Задача 1
     public static void checkLeapYear(int year) {
-        boolean leapYear = ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0) && year < 1584);
+        boolean leapYear = (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
         if (leapYear) {
             System.out.println(year + " - Год является високосным");
         } else {
@@ -44,9 +44,9 @@ public class Homework {
     public static void checkDeliveryDistanse (int deliveryDistance) {
         if (deliveryDistance < 20) {
             System.out.println("Потребуются сутки на доставку");
-        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             System.out.println("Потребуется двое суток на доставку");
-        } else if (deliveryDistance > 60 && deliveryDistance < 100) {
+        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             System.out.println(" Потребуются трое суток на доставку");
         } else {
             System.out.println(" Доставка невозможна");
